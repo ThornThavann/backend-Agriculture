@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OrderID": {
+      "type": "integer",
+      "required": true
+    },
+    "UserID": {
+      "type": "integer",
+      "required": true
+    },
+    "ProductID": {
+      "type": "integer",
+      "required": true
+    },
+    "Quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "TotalPrice": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}
