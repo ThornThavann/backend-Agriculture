@@ -802,6 +802,11 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   attributes: {
     CategoryID: Attribute.Integer & Attribute.Required;
     Name: Attribute.String & Attribute.Required;
+    products: Attribute.Relation<
+      'api::category.category',
+      'oneToMany',
+      'api::product.product'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -912,6 +917,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
     OriginProvince: Attribute.String & Attribute.Required;
     OwerID: Attribute.Integer & Attribute.Required;
     images: Attribute.Media & Attribute.Required;
+    category: Attribute.Relation<
+      'api::product.product',
+      'manyToOne',
+      'api::category.category'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
