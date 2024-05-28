@@ -24,10 +24,6 @@
       "type": "decimal",
       "required": true
     },
-    "CategoryID": {
-      "type": "integer",
-      "required": true
-    },
     "Quantity": {
       "type": "integer",
       "required": true
@@ -55,22 +51,11 @@
         "audios"
       ]
     },
-    "category": {
+    "categoryID": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "products"
-    },
-    "customer": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::customer.customer"
-    },
-    "orders": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order.order",
-      "mappedBy": "product"
     }
   }
 }
