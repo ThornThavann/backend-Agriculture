@@ -843,11 +843,6 @@ export interface ApiCustomerCustomer extends Schema.CollectionType {
     Phone: Attribute.BigInteger & Attribute.Required;
     Email: Attribute.Email & Attribute.Required;
     Telegram: Attribute.BigInteger & Attribute.Required;
-    orders: Attribute.Relation<
-      'api::customer.customer',
-      'oneToMany',
-      'api::order.order'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -883,16 +878,6 @@ export interface ApiOrderOrder extends Schema.CollectionType {
     ProductID: Attribute.Integer & Attribute.Required;
     Quantity: Attribute.Integer & Attribute.Required;
     TotalPrice: Attribute.Decimal & Attribute.Required;
-    product: Attribute.Relation<
-      'api::order.order',
-      'manyToOne',
-      'api::product.product'
-    >;
-    customer: Attribute.Relation<
-      'api::order.order',
-      'manyToOne',
-      'api::customer.customer'
-    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -926,26 +911,15 @@ export interface ApiProductProduct extends Schema.CollectionType {
     ProductID: Attribute.Integer & Attribute.Required;
     Name: Attribute.String & Attribute.Required;
     Price: Attribute.Decimal & Attribute.Required;
-    CategoryID: Attribute.Integer & Attribute.Required;
     Quantity: Attribute.Integer & Attribute.Required;
     Origanic: Attribute.Boolean & Attribute.Required;
     OriginProvince: Attribute.String & Attribute.Required;
     OwerID: Attribute.Integer & Attribute.Required;
     images: Attribute.Media & Attribute.Required;
-    category: Attribute.Relation<
+    categoryID: Attribute.Relation<
       'api::product.product',
       'manyToOne',
       'api::category.category'
-    >;
-    customer: Attribute.Relation<
-      'api::product.product',
-      'oneToOne',
-      'api::customer.customer'
-    >;
-    orders: Attribute.Relation<
-      'api::product.product',
-      'oneToMany',
-      'api::order.order'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
