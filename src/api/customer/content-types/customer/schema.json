@@ -35,6 +35,12 @@
     "Telegram": {
       "type": "biginteger",
       "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "customer"
     }
   }
 }
