@@ -843,6 +843,11 @@ export interface ApiCustomerCustomer extends Schema.CollectionType {
     Phone: Attribute.BigInteger & Attribute.Required;
     Email: Attribute.Email & Attribute.Required;
     Telegram: Attribute.BigInteger & Attribute.Required;
+    products: Attribute.Relation<
+      'api::customer.customer',
+      'oneToMany',
+      'api::product.product'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -920,6 +925,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'api::product.product',
       'manyToOne',
       'api::category.category'
+    >;
+    customer: Attribute.Relation<
+      'api::product.product',
+      'manyToOne',
+      'api::customer.customer'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
