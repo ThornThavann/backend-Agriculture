@@ -12,9 +12,9 @@ npm run develop
 yarn develop
 ```
 
-### `Get All Fairy Tales`
+### `Get All Products AgroMarket`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+Start your Strapi application with autoReload disabled. [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?populate=*)
 
 ```
 npm run start
@@ -31,7 +31,14 @@ npm run build
 # or
 yarn build
 ```
-### `Filter 6 Product by Category`
+### `AgroMarket 6 Product by Category`
+
+
+[Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=6&populate=*)
+
+npm run 
+# or 
+yarn
 
 
 
