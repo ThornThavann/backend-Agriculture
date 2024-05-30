@@ -4,7 +4,7 @@ This API allows you to manage and retrieve Agromarket website. Below are the ava
 
 ### `Endpoints`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+Start your Strapi application with autoReload enabled. [Learn more]( )
 
 ```
 npm run develop
@@ -24,7 +24,7 @@ yarn start
 
 ### `Get Product page `
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+Build your admin panel. [Learn more]( )
 
 ```
 npm run build
@@ -34,11 +34,15 @@ yarn build
 ### `AgroMarket 6 Product by Category`
 
 
-[Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=6&populate=*)
+Filters get 6 Products [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=6&populate=*)
 
-npm run 
-# or 
-yarn
+
+```
+npm run filter
+# or
+yarn filter
+```
+
 
 
 
