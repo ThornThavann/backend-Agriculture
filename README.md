@@ -20,6 +20,8 @@ Ex: How to get all products AgroMarket [Learn more](https://colorful-ball-607353
 GET http://localhost:1337/api/products
 
 ```
+
+
 ```
 {
     "data": [
@@ -40,15 +42,19 @@ GET http://localhost:1337/api/products
 ```
 
 
+
 ### `AgroMarket 6 Product by Category`
 
 Ex: How to get AgroMarket 6 products by Category [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=6&populate=*)
+
+
 
 ```
 GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=6
 ```
 
-``{
+
+{
     "data": {
         "id": 3,
         "attributes": {
@@ -63,8 +69,8 @@ GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=6
             "updatedAt": "2024-05-31T07:23:07.824Z",
             "publishedAt": "2024-05-23T06:43:25.500Z"
         }
-    },`
-```
+    },
+
 
 
 
@@ -74,6 +80,8 @@ Ex: How to get detail page [Learn more]([https://colorful-ball-607353d204.strapi
 
 ```
 GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=5
+```
+
 ```
 {
     "data": {
@@ -90,7 +98,7 @@ GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=5
             "updatedAt": "2024-05-31T07:31:56.789Z",
             "publishedAt": "2024-05-23T06:51:22.914Z"
         }
-    },```
+    },
 ```
 
 
