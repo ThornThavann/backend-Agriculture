@@ -54,26 +54,6 @@ GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=6
 ```
 
 
-{
-    "data": {
-        "id": 3,
-        "attributes": {
-            "ProductID": 2,
-            "Name": "Banana",
-            "Price": 1.5,
-            "Quantity": 200,
-            "Origanic": false,
-            "OriginProvince": "\tKampong Cham",
-            "OwerID": 1,
-            "createdAt": "2024-05-23T06:43:20.826Z",
-            "updatedAt": "2024-05-31T07:23:07.824Z",
-            "publishedAt": "2024-05-23T06:43:25.500Z"
-        }
-        ```
-
-
-
-
 #### `Get Detail page `
 
 Ex: How to get detail page [Learn more]([https://colorful-ball-607353d204.strapiapp.com/api/products?populate=*](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=5&populate=*))
