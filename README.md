@@ -68,7 +68,8 @@ GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=6
             "createdAt": "2024-05-23T06:43:20.826Z",
             "updatedAt": "2024-05-31T07:23:07.824Z",
             "publishedAt": "2024-05-23T06:43:25.500Z"
-        }`
+        }
+        ```
 
 
 
