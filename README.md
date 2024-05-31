@@ -20,6 +20,7 @@ Ex: [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?pop
 GET http://localhost:1337/api/products
 
 ```
+```
 {
     "data": [
         {
@@ -38,20 +39,24 @@ GET http://localhost:1337/api/products
                 "images": {
 ```
 
+
 #### `Get Product page `
-```
+
 Ex: [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?populate=*)
+
+
+```
+GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=5
 ```
 
 
-GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=5
+
+
 
 
 ### `AgroMarket 6 Product by Category`
 
-
 Ex: [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=6&populate=*)
-
 
 ```
 GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=6
