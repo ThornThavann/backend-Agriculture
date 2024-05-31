@@ -56,7 +56,7 @@ GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=6
 
 #### `Get Detail page `
 
-Ex [Learn more]([https://colorful-ball-607353d204.strapiapp.com/api/products?populate=*](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=5&populate=*))
+Ex: How to get detail page [Learn more]([https://colorful-ball-607353d204.strapiapp.com/api/products?populate=*](https://colorful-ball-607353d204.strapiapp.com/api/products?filters[categoryID][CategoryID][$eq]=${categoryId}&pagination[pageSize]=5&populate=*))
 
 ```
 GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=5
