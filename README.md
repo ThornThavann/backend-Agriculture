@@ -38,13 +38,14 @@ GET http://localhost:1337/api/products
                 "images": {
 ```
 
-### `Get Product page `
-
+#### `Get Product page `
+```
 Ex: [Learn more](https://colorful-ball-607353d204.strapiapp.com/api/products?populate=*)
+```
 
-```
+
 GET /api/restaurants?filters[CategoryID][Products][Category][$eq]=5
-```
+
 
 ### `AgroMarket 6 Product by Category`
 
